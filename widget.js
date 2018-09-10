@@ -43,14 +43,14 @@ function createIframeWithDiv() {
 function createScriptInIframe(iframe){
     var script = iframe.contentWindow.document.createElement("script")
     script.type = "text/javascript"
-    script.src = "./static/js/main.js"
+    script.src = "https://rawgit.com/angmark0309/widget/master/static/js/main.js"
     iframe.contentWindow.document.body.appendChild(script)
     console.log('iframe.contentWindow =', iframe.parentElement)
 }
 
 function createIframeStyleSheet(iframe){
     var cssLink = document.createElement("link");
-    cssLink.href = "./static/css/main.css";
+    cssLink.href = "https://rawgit.com/angmark0309/widget/master/static/css/main.css";
     cssLink.rel = "stylesheet";
     cssLink.type = "text/css";
     iframe.contentWindow.document.head.appendChild(cssLink);
