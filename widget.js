@@ -33,6 +33,8 @@ function createIframeWithDiv() {
     document.body.appendChild(iframe);
     iframe.style.border = "none"
     iframe.style.overflow = "hidden"
+    iframe.style.position = "fixed"
+    iframe.style.bottom = "20px"
     createIframeStyleSheet(iframe)
     var rootDiv = iframe.contentWindow.document.createElement("div")
     rootDiv.setAttribute("id", "root")
